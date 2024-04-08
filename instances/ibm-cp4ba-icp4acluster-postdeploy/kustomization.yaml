@@ -1,0 +1,12 @@
+resources:
+
+- post-deploy/cloud-pak-dashboard.yaml
+- post-deploy/decision-center.yaml
+- post-deploy/decision-runner.yaml
+- post-deploy/decision-server-console.yaml
+- post-deploy/decision-server-runtime.yaml
+- odmroles/odm-postdeploy-sa.yaml
+- odmroles/odm-postdeploy-cm.yaml
+- odmroles/odm-postdeploy-role.yaml
+- odmroles/odm-postdeploy-rolebinding.yaml
+- odmroles/odm-postdeploy-job.yaml
