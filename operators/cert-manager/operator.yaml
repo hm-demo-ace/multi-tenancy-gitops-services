@@ -9,7 +9,7 @@
 #   source: certified-operators
 #   sourceNamespace: openshift-marketplace
 apiVersion: operators.coreos.com/v1alpha1
-kind: CertManager
+kind: CatalogSource
 metadata:
   name: ibm-cert-manager-catalog
   namespace: openshift-marketplace
