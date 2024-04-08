@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: cert-manager-operator
 spec:
-  channel: stable
+  channel: latest
   installPlanApproval: Automatic
   name: cert-manager-operator
   source: certified-operators
