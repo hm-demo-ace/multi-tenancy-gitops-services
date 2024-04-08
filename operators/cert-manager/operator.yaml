@@ -17,7 +17,7 @@ spec:
   displayName: ibm-cert-manager-4.2.2
   publisher: IBM
   sourceType: grpc
-  image: registry.redhat.io/cert-manager/cert-manager-operator-rhel9
+  image: icr.io/cpopen/ibm-cert-manager-operator-catalog
   updateStrategy:
     registryPoll:
       interval: 45m
