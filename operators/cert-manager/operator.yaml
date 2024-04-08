@@ -1,10 +1,24 @@
+# apiVersion: operators.coreos.com/v1alpha1
+# kind: Subscription
+# metadata:
+#   name: cert-manager-operator
+# spec:
+#   channel: latest
+#   installPlanApproval: Automatic
+#   name: cert-manager-operator
+#   source: certified-operators
+#   sourceNamespace: openshift-marketplace
 apiVersion: operators.coreos.com/v1alpha1
-kind: Subscription
+kind: CertManager
 metadata:
-  name: cert-manager-operator
+  name: ibm-cert-manager-catalog
+  namespace: openshift-marketplace
 spec:
-  channel: latest
-  installPlanApproval: Automatic
-  name: cert-manager-operator
-  source: certified-operators
-  sourceNamespace: openshift-marketplace
+  displayName: ibm-cert-manager-4.2.2
+  publisher: IBM
+  sourceType: grpc
+  image: registry.redhat.io/cert-manager/cert-manager-operator-rhel9
+  updateStrategy:
+    registryPoll:
+      interval: 45m
+
